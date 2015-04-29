@@ -239,7 +239,8 @@ class Seq(object):
         """Add another sequence or string to this sequence.
 
         If adding a string to a Seq, the alphabet is preserved:
-
+		@zhilei: add a string to a Seq, need to check whether the element if legal
+		for the alphabet
         >>> from Bio.Seq import Seq
         >>> from Bio.Alphabet import generic_protein
         >>> Seq("MELKI", generic_protein) + "LV"
